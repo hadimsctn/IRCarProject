@@ -62,14 +62,14 @@ void loop()
   // Calculate the distance
   distanceCm = duration * SOUND_SPEED/2;
   // // Prints the distance in the Serial Monitor
-  if (distanceCm<3&&distanceCm!=0){
+  if (distanceCm<=10&&distanceCm!=0){
+    digitalWrite(buzzer, HIGH);
     digitalWrite(motor2Pin1, LOW);
     digitalWrite(motor2Pin2, LOW);
     digitalWrite(motor1Pin1, LOW);
     digitalWrite(motor1Pin2, LOW);
-    digitalWrite(buzzer, HIGH);
   }
-  if (distanceCm>3){
+  if (distanceCm>10){
     digitalWrite(buzzer, LOW);
   }
   // Serial.println("haha");
@@ -86,19 +86,19 @@ void loop()
     }
     if (results.value == 0xFF5AA5)
     {
-      dutyCycle = dutyCycle - 10;
+      dutyCycle = dutyCycle - 20;
       ledcWrite(pwmChannel, dutyCycle);
       if(dutyCycle2<250){
-        dutyCycle2 = dutyCycle2 + 10;
+        dutyCycle2 = dutyCycle2 + 20;
         ledcWrite(pwmChannel2, dutyCycle2);
       }
     }
     if (results.value == 0xFF10EF)
     {
-      dutyCycle2 = dutyCycle2 - 10;
+      dutyCycle2 = dutyCycle2 - 20;
       ledcWrite(pwmChannel2, dutyCycle2);
       if(dutyCycle<250){
-        dutyCycle = dutyCycle + 10;
+        dutyCycle = dutyCycle + 20;
         ledcWrite(pwmChannel, dutyCycle);
       }
     }
@@ -107,6 +107,8 @@ void loop()
       digitalWrite(motor2Pin2, LOW);
       digitalWrite(motor1Pin1, LOW);
       digitalWrite(motor1Pin2, HIGH);
+      distanceCm=15;
+      delay(3000);
     }
     if (results.value == 0xFF38C7){
       digitalWrite(motor2Pin1, LOW);
