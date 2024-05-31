@@ -4,8 +4,8 @@
 
 IRrecv irrecv(34);
 decode_results results;
-const int trigPin = 13;
-const int echoPin = 12;
+const int trigPin = 27;
+const int echoPin = 26;
 // define sound speed in cm/uS
 #define SOUND_SPEED 0.034
 int motor1Pin1 = 5;
@@ -19,8 +19,10 @@ int mode=1;
 // Setting PWM properties
 const int freq = 30000;
 const int pwmChannel = 0;
+const int pwmChannel2 = 1;
 const int resolution = 8;
-int dutyCycle = 130;
+int dutyCycle = 200;
+int dutyCycle2 = 200;
 long duration;
 float distanceCm;
 void setup()
@@ -37,39 +39,43 @@ void setup()
   pinMode(buzzer, OUTPUT);
   // configure LED PWM functionalitites
   ledcSetup(pwmChannel, freq, resolution);
+  ledcSetup(pwmChannel2, freq, resolution);
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT);
   // attach the channel to the GPIO to be controlled
   ledcAttachPin(enable1Pin, pwmChannel);
-  ledcAttachPin(enable2Pin, pwmChannel);
+  ledcAttachPin(enable2Pin, pwmChannel2);
   ledcWrite(pwmChannel, dutyCycle);
+  ledcWrite(pwmChannel2, dutyCycle2);
 }
 
 void loop()
 {
-  digitalWrite(buzzer, LOW);
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   // Sets the trigPin on HIGH state for 10 micro seconds
   digitalWrite(trigPin, HIGH);
-
+  delayMicroseconds(2);                           
   // Reads the echoPin, returns the sound wave travel time in microseconds
   duration = pulseIn(echoPin, HIGH);
 
   // Calculate the distance
   distanceCm = duration * SOUND_SPEED/2;
-
-  // Prints the distance in the Serial Monitor
-  if (distanceCm<3){
-    if(dutyCycle>130){
-      dutyCycle -= 50;
-      ledcWrite(pwmChannel, dutyCycle);
-    }
-    Serial.println(distanceCm);
+  // // Prints the distance in the Serial Monitor
+  if (distanceCm<3&&distanceCm!=0){
+    digitalWrite(motor2Pin1, LOW);
+    digitalWrite(motor2Pin2, LOW);
+    digitalWrite(motor1Pin1, LOW);
+    digitalWrite(motor1Pin2, LOW);
     digitalWrite(buzzer, HIGH);
   }
+  if (distanceCm>3){
+    digitalWrite(buzzer, LOW);
+  }
+  // Serial.println("haha");
   if (irrecv.decode(&results))
   {
+    Serial.println(results.value,HEX);
     if (results.value == 0xFF18E7)
     {
       Serial.println("start");
@@ -80,56 +86,62 @@ void loop()
     }
     if (results.value == 0xFF5AA5)
     {
-      Serial.println(mode);
-      if(mode ==1){
-        digitalWrite(motor2Pin1, LOW);
-        digitalWrite(motor2Pin2, HIGH);
-        digitalWrite(motor1Pin1, LOW);
-        digitalWrite(motor1Pin2, LOW);
-      }
-      else if (mode ==2){
-        digitalWrite(motor2Pin1, HIGH);
-        digitalWrite(motor2Pin2, LOW);
-        digitalWrite(motor1Pin1, LOW);
-        digitalWrite(motor1Pin2, LOW);
+      dutyCycle = dutyCycle - 10;
+      ledcWrite(pwmChannel, dutyCycle);
+      if(dutyCycle2<250){
+        dutyCycle2 = dutyCycle2 + 10;
+        ledcWrite(pwmChannel2, dutyCycle2);
       }
     }
     if (results.value == 0xFF10EF)
     {
-      Serial.println(mode);
-      if(mode ==1){
-        digitalWrite(motor2Pin1, LOW);
-        digitalWrite(motor2Pin2, LOW);
-        digitalWrite(motor1Pin1, HIGH);
-        digitalWrite(motor1Pin2, LOW);
+      dutyCycle2 = dutyCycle2 - 10;
+      ledcWrite(pwmChannel2, dutyCycle2);
+      if(dutyCycle<250){
+        dutyCycle = dutyCycle + 10;
+        ledcWrite(pwmChannel, dutyCycle);
       }
-      else if (mode == 2){
-        digitalWrite(motor2Pin1, LOW);
-        digitalWrite(motor2Pin2, LOW);
-        digitalWrite(motor1Pin1, LOW);
-        digitalWrite(motor1Pin2, HIGH);
-      }
+    }
+    if (results.value == 0xFF4AB5){
+      digitalWrite(motor2Pin1, HIGH);
+      digitalWrite(motor2Pin2, LOW);
+      digitalWrite(motor1Pin1, LOW);
+      digitalWrite(motor1Pin2, HIGH);
     }
     if (results.value == 0xFF38C7){
-      if(mode ==1){
-        mode =2;
-      }else if(mode == 2){
-        mode = 1;
+      digitalWrite(motor2Pin1, LOW);
+      digitalWrite(motor2Pin2, LOW);
+      digitalWrite(motor1Pin1, LOW);
+      digitalWrite(motor1Pin2, LOW);
+    }
+    if (results.value == 0xFF6897)
+    {
+      dutyCycle2 = dutyCycle2 + 10;
+      dutyCycle = dutyCycle + 10;
+      if(dutyCycle>255){
+        dutyCycle = 255;
+      }
+      if(dutyCycle2>255){
+        dutyCycle2 = 255;
+      }
+      ledcWrite(pwmChannel, dutyCycle);
+      ledcWrite(pwmChannel2, dutyCycle2);
+    }
+    if (results.value == 0xFFB04F)
+    {
+      dutyCycle2 = dutyCycle2 - 10;
+      dutyCycle = dutyCycle - 10;
+      ledcWrite(pwmChannel, dutyCycle);
+      ledcWrite(pwmChannel2, dutyCycle2);
+      if(dutyCycle<100){
+        dutyCycle = 100;
+      }
+      if(dutyCycle2<100){
+        dutyCycle2 = 100;
       }
     }
-    if(results.value !=0){ 
-      if(dutyCycle<250){
-        dutyCycle += 10;
-        ledcWrite(pwmChannel, dutyCycle);
-        Serial.println(dutyCycle);
-      }      
-    }
+    Serial.println(dutyCycle);
+    Serial.println(dutyCycle2);
     irrecv.resume();
-    delay(1000);
-  }
-  else{
-    if(dutyCycle>130)
-    dutyCycle -= 1;
-    ledcWrite(pwmChannel, dutyCycle);
   }
 }
