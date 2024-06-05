@@ -2,10 +2,10 @@
 #include <IRremoteESP8266.h>
 #include <IRrecv.h>
 
-IRrecv irrecv(34);
+IRrecv irrecv(25);
 decode_results results;
-const int trigPin = 27;
-const int echoPin = 26;
+const int trigPin = 26;
+const int echoPin = 27;
 // define sound speed in cm/uS
 #define SOUND_SPEED 0.034
 int motor1Pin1 = 5;
@@ -63,6 +63,7 @@ void loop()
   distanceCm = duration * SOUND_SPEED/2;
   // // Prints the distance in the Serial Monitor
   if (distanceCm<=10&&distanceCm!=0){
+    Serial.println(distanceCm);
     digitalWrite(buzzer, HIGH);
     digitalWrite(motor2Pin1, LOW);
     digitalWrite(motor2Pin2, LOW);
@@ -79,8 +80,8 @@ void loop()
     if (results.value == 0xFF18E7)
     {
       Serial.println("start");
-      digitalWrite(motor2Pin1, LOW);
-      digitalWrite(motor2Pin2, HIGH);
+      digitalWrite(motor2Pin1, HIGH);
+      digitalWrite(motor2Pin2, LOW);
       digitalWrite(motor1Pin1, HIGH);
       digitalWrite(motor1Pin2, LOW);
     }
@@ -103,8 +104,8 @@ void loop()
       }
     }
     if (results.value == 0xFF4AB5){
-      digitalWrite(motor2Pin1, HIGH);
-      digitalWrite(motor2Pin2, LOW);
+      digitalWrite(motor2Pin1, LOW);
+      digitalWrite(motor2Pin2, HIGH);
       digitalWrite(motor1Pin1, LOW);
       digitalWrite(motor1Pin2, HIGH);
       distanceCm=15;
