@@ -34,3 +34,13 @@ Bill of Material
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/3784d847-cbee-4f9c-bd94-da95fd686fd4)
 9. 1x LTC1971 https://shopee.vn/Modul-t%C4%83ng-%C3%A1p-Boost-DC-DC-100W-250W-400W-15A-i.795121397.25674220538
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/4f4dfaa6-6abd-4d97-81f9-f30ba33ed8be)
+
+Hardware Schematic
+
+Software Concept
+
+Author
+Nguyễn Đức Hà - 20204739
+Giáp Quang Trung - 20204797
+Trần Tiến Trung - 20204799
+Trần Tuấn Minh - 20204842
