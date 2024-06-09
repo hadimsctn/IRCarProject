@@ -5,7 +5,7 @@
 ## 📝 Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Bill of Material](#BillOfMaterial)
+- [Bill of Material](#billofmaterial)
 - [Hardware Schematic](#HardwareSchematic)
 - [Software Concept](#SoftwareConcept)
 - [Authors](#Authors)
@@ -15,7 +15,7 @@ This project using IR Receiver to Receive Data from Remote for control the car
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-## 🚀 Bill of Material <a name = "BillOfMaterial"></a>
+## 🚀 Bill of Material <a name = "billofmaterial"></a>
 1. 2x DC Motor https://nshopvn.com/product/dong-co-dc-giam-toc-vang-2-truc-148/
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/7b0982d9-df1e-4233-9808-3a002e9252c7)
 2. 4x Battery 18650 2000mAh https://nshopvn.com/product/pin-cell-18650-2000mah/
