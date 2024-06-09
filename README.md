@@ -1,25 +1,21 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://github.com/phuthien007/Waiting-Queue/blob/master/client/public/resources/images/tf-logo.jpg" alt="Project logo"></a>
-</p>
-IR Car project
+<h3 align="center">IR Car project</h3>
 
-A project help control the car with IR Remote
+<p align="center"> A project help control the car with IR Remote<br> </p>
 
-Table of Contents
-About
-Getting Started
-Bill of Material
-Hardware Schematic
-Software Concept
-Author
+## 📝 Table of Contents
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Bill of Material](#BillOfMaterial)
+- [Hardware Schematic](#HardwareSchematic)
+- [Software Concept](#SoftwareConcept)
+- [Authors](#Authors)
 
-About
+## 🧐 About <a name = "about"></a>
 This project using IR Receiver to Receive Data from Remote for control the car
 
-Getting Started
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-Bill of Material
+## 🚀 Bill of Material <a name = "BillOfMaterial"></a>
 1. 2x DC Motor https://nshopvn.com/product/dong-co-dc-giam-toc-vang-2-truc-148/
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/7b0982d9-df1e-4233-9808-3a002e9252c7)
 2. 4x Battery 18650 2000mAh https://nshopvn.com/product/pin-cell-18650-2000mah/
@@ -39,11 +35,11 @@ Bill of Material
 9. 1x LTC1971 https://shopee.vn/Modul-t%C4%83ng-%C3%A1p-Boost-DC-DC-100W-250W-400W-15A-i.795121397.25674220538
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/4f4dfaa6-6abd-4d97-81f9-f30ba33ed8be)
 
-Hardware Schematic
+## ⛏️ Hardware Schematic <a name = "HardwareSchematic"></a>
 
-Software Concept
+## 🎉 Software Concept <a name = "SoftwareConcept"></a>
 
-Author
+## ✍️ Authors <a name = "authors"></a>
 Nguyễn Đức Hà - 20204739
 Giáp Quang Trung - 20204797
 Trần Tiến Trung - 20204799
