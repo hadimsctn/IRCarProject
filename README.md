@@ -6,9 +6,9 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Bill of Material](#billofmaterial)
-- [Hardware Schematic](#HardwareSchematic)
-- [Software Concept](#SoftwareConcept)
-- [Authors](#Authors)
+- [Hardware Schematic](#hardwareschematic)
+- [Software Concept](#softwareconcept)
+- [Authors](#authors)
 
 ## 🧐 About <a name = "about"></a>
 This project using IR Receiver to Receive Data from Remote for control the car
@@ -35,9 +35,9 @@ This project using IR Receiver to Receive Data from Remote for control the car
 9. 1x LTC1971 https://shopee.vn/Modul-t%C4%83ng-%C3%A1p-Boost-DC-DC-100W-250W-400W-15A-i.795121397.25674220538
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/4f4dfaa6-6abd-4d97-81f9-f30ba33ed8be)
 
-## ⛏️ Hardware Schematic <a name = "HardwareSchematic"></a>
+## ⛏️ Hardware Schematic <a name = "hardwareschematic"></a>
 
-## 🎉 Software Concept <a name = "SoftwareConcept"></a>
+## 🎉 Software Concept <a name = "softwareconcept"></a>
 
 ## ✍️ Authors <a name = "authors"></a>
 Nguyễn Đức Hà - 20204739
