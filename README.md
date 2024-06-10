@@ -43,16 +43,16 @@ This project using IR Receiver to Receive Data from Remote for control the car
 When encountering an obstacle at a distance of 10cm, the car will emergency brake and turn on the buzzer
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/1c4b972b-957f-40cc-898e-e79533a7d562)
 - This car receive IR signal to control.
-When signal is 0xFF18E7 or 0xFF4AB5, set the pin for go ahead or go back.
+1.When signal is 0xFF18E7 or 0xFF4AB5, set the pin for go ahead or go back.
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/24b4760c-819e-426b-8580-2f3d459485f6)
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/8ec29992-4f7e-46de-99b1-b21b41fc6e98)
-When signal is 0xFF5AA5, car turn left. Turn left by increasing the speed of the right wheel and decreasing the speed of the left
+2.When signal is 0xFF5AA5, car turn left. Turn left by increasing the speed of the right wheel and decreasing the speed of the left
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/f42cc8dc-74e3-490b-baf7-ec5a2f946791)
-When signal is 0xFF10EF, car turn right. Turn right by increasing the speed of the left wheel and decreasing the speed of the right
+3.When signal is 0xFF10EF, car turn right. Turn right by increasing the speed of the left wheel and decreasing the speed of the right
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/179e9e21-043d-4e0b-a73e-bc6337ff64d5)
-When signal is 0xFF38C7, the car will stop.
+4.When signal is 0xFF38C7, the car will stop.
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/ab32e6e6-68f7-46f2-8db0-a708586845c1)
-When signal is 0xFF6897 or 0xFFB04F, the vehicle will accelerate or decelerate.
+5.When signal is 0xFF6897 or 0xFFB04F, the vehicle will accelerate or decelerate.
 ## ✍️ Authors <a name = "authors"></a>
 - Nguyễn Đức Hà - 20204739
 - Giáp Quang Trung - 20204797
