@@ -40,7 +40,7 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
 
 ## ✍️ Authors <a name = "authors"></a>
-Nguyễn Đức Hà - 20204739
-Giáp Quang Trung - 20204797
-Trần Tiến Trung - 20204799
-Trần Tuấn Minh - 20204842
+- Nguyễn Đức Hà - 20204739
+- Giáp Quang Trung - 20204797
+- Trần Tiến Trung - 20204799
+- Trần Tuấn Minh - 20204842
