@@ -104,7 +104,7 @@ void loop()
       digitalWrite(motor1Pin1, LOW);
       digitalWrite(motor1Pin2, HIGH);
       distanceCm=15;
-      delay(3000);
+      delay(1000);
     }
     if (results.value == 0xFF38C7){
       digitalWrite(motor2Pin1, LOW);
