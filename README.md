@@ -39,6 +39,9 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/a8e4e762-658e-49a0-899c-7e3f550406ff)
 
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
+- The vehicle uses 1 SR04 for emergency braking<br/>
+When encountering an obstacle at a distance of 10cm, the car will emergency brake and turn on the buzzer
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/2a6f8d95-16f6-42d3-8c69-8a3fec931c80)
 
 ## ✍️ Authors <a name = "authors"></a>
 - Nguyễn Đức Hà - 20204739
