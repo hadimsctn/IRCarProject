@@ -1,5 +1,7 @@
-![ea117ecd-4995-4984-a2ac-c93398282b82](https://github.com/hadimsctn/IRCarProject/assets/103713872/6468a3b4-5671-42d9-bddb-5e8d8cd8d50a)
-
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://github.com/hadimsctn/IRCarProject/assets/103713872/6468a3b4-5671-42d9-bddb-5e8d8cd8d50a" alt="Project logo"></a>
+</p>
 <h3 align="center">IR Car project</h3>
 
 <p align="center"> A project help control the car with IR Remote<br> </p>
