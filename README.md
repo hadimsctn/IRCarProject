@@ -14,6 +14,11 @@
 This project using IR Receiver to Receive Data from Remote for control the car
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
+- To turn on the power for the vehicle, switch on this switch.
+- ![db9a5d6d-8566-431f-8d8d-3155062dd70a](https://github.com/hadimsctn/IRCarProject/assets/103713872/58f6619c-8a32-43f8-8bed-3e7fec2bc7cd)
+
+- Move the vehicle in different directions by pressing the arrow buttons on the remote control, accelerate by pressing *, decelerate by pressing #, and brake by pressing OK.
+- ![4944dfe1-d7a7-4dbf-b1b9-dccd48ba63be](https://github.com/hadimsctn/IRCarProject/assets/103713872/9170fb9d-e84c-42f2-a058-a1d06976703f)
 
 ## 🚀 Bill of Material <a name = "billofmaterial"></a>
 1. 2x DC Motor https://nshopvn.com/product/dong-co-dc-giam-toc-vang-2-truc-148/
