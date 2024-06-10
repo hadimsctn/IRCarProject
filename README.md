@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="[https://github.com/phuthien007/Waiting-Queue/blob/master/client/public/resources/images/tf-logo.jpg](https://github.com/hadimsctn/IRCarProject/assets/103713872/2cb1eee2-d313-4918-8999-e8bf2c1e8b18)" alt="Project logo"></a>
+</p>
+
 <h3 align="center">IR Car project</h3>
 
 <p align="center"> A project help control the car with IR Remote<br> </p>
