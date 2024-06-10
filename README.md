@@ -2,6 +2,7 @@
   <a href="" rel="noopener">
  <img width=200px height=200px src="[https://github.com/phuthien007/Waiting-Queue/blob/master/client/public/resources/images/tf-logo.jpg](https://github.com/hadimsctn/IRCarProject/assets/103713872/2cb1eee2-d313-4918-8999-e8bf2c1e8b18)" alt="Project logo"></a>
 </p>
+![ea117ecd-4995-4984-a2ac-c93398282b82](https://github.com/hadimsctn/IRCarProject/assets/103713872/6468a3b4-5671-42d9-bddb-5e8d8cd8d50a)
 
 <h3 align="center">IR Car project</h3>
 
