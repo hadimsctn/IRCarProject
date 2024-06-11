@@ -29,23 +29,19 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/7b0982d9-df1e-4233-9808-3a002e9252c7)
 2. 4x Battery 18650 2000mAh https://nshopvn.com/product/pin-cell-18650-2000mah/
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/a60fa53d-1283-4aab-b2b6-d2fecd56f5df)
-3. 1x TP4056 https://nshopvn.com/product/mach-sac-pin-tp4056-co-ic-bao-ve/
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/95d0e22f-3f2b-4304-b3bf-fc09e2af8224)
-4. 1x L298N https://nshopvn.com/product/mach-dieu-khien-dong-co-dc-l298n/
+3. 1x L298N https://nshopvn.com/product/mach-dieu-khien-dong-co-dc-l298n/
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/007c77c9-9dd9-4e30-aef7-64c6cc108bee)
-5. 1x ESP32 https://dientutuyetnga.com/products/mach-thu-phat-esp32-nodemcu-typec-ch340-esp-wroom-32
+4. 1x ESP32 https://dientutuyetnga.com/products/mach-thu-phat-esp32-nodemcu-typec-ch340-esp-wroom-32
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/798203ad-3659-45c7-af39-d76c8e773fac)
-6. 1x HC-SR04 https://nshopvn.com/product/cam-bien-sieu-am-hc-sr04/
+5. 1x HC-SR04 https://nshopvn.com/product/cam-bien-sieu-am-hc-sr04/
 <div![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/8dc341a2-cc23-4567-8ac6-327ce09ffd74)
-7. 2x Diode IR https://www.cytrontech.vn/c-sensor/p-ir-receiver-diode-vs1838b-38khz
+6. 2x Diode IR https://www.cytrontech.vn/c-sensor/p-ir-receiver-diode-vs1838b-38khz
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/9db3a32d-65f0-430d-85e0-ce5b7c193c05)
-8. 1x Buzzer https://shopee.vn/product/148048328/4974689853?gsht=sjFxkDeGHTM5gwwS
+7. 1x Buzzer https://shopee.vn/product/148048328/4974689853?gsht=sjFxkDeGHTM5gwwS
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/3784d847-cbee-4f9c-bd94-da95fd686fd4)
-9. 1x LTC1971 https://shopee.vn/Modul-t%C4%83ng-%C3%A1p-Boost-DC-DC-100W-250W-400W-15A-i.795121397.25674220538
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/4f4dfaa6-6abd-4d97-81f9-f30ba33ed8be)
 
 ## ⛏️ Hardware Schematic <a name = "hardwareschematic"></a>
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/a8e4e762-658e-49a0-899c-7e3f550406ff)
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/43ab079a-dd83-45eb-8dc5-69b9612c1936)
 
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
 1. This car uses 1 SR04 for emergency braking<br/>
