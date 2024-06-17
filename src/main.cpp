@@ -21,8 +21,8 @@ const int freq = 30000;
 const int pwmChannel = 0;
 const int pwmChannel2 = 1;
 const int resolution = 8;
-int dutyCycle = 200;
-int dutyCycle2 = 200;
+int dutyCycle = 180;
+int dutyCycle2 = 180;
 long duration;
 float distanceCm;
 void setup()
@@ -82,19 +82,19 @@ void loop()
     }
     if (results.value == 0xFF5AA5)
     {
-      dutyCycle = dutyCycle - 20;
+      dutyCycle = dutyCycle - 10;
       ledcWrite(pwmChannel, dutyCycle);
       if(dutyCycle2<250){
-        dutyCycle2 = dutyCycle2 + 20;
+        dutyCycle2 = dutyCycle2 + 10;
         ledcWrite(pwmChannel2, dutyCycle2);
       }
     }
     if (results.value == 0xFF10EF)
     {
-      dutyCycle2 = dutyCycle2 - 20;
+      dutyCycle2 = dutyCycle2 - 10;
       ledcWrite(pwmChannel2, dutyCycle2);
       if(dutyCycle<250){
-        dutyCycle = dutyCycle + 20;
+        dutyCycle = dutyCycle + 10;
         ledcWrite(pwmChannel, dutyCycle);
       }
     }
@@ -104,7 +104,7 @@ void loop()
       digitalWrite(motor1Pin1, LOW);
       digitalWrite(motor1Pin2, HIGH);
       distanceCm=15;
-      delay(1000);
+      delay(500);
     }
     if (results.value == 0xFF38C7){
       digitalWrite(motor2Pin1, LOW);
