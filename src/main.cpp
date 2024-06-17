@@ -51,6 +51,7 @@ void setup()
 
 void loop()
 {
+  // code sr04
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   digitalWrite(trigPin, HIGH);
@@ -68,7 +69,7 @@ void loop()
   if (distanceCm>10){
     digitalWrite(buzzer, LOW);
   }
-  // Serial.println("haha");
+  //code IR
   if (irrecv.decode(&results))
   {
     Serial.println(results.value,HEX);
