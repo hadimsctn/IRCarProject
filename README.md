@@ -41,7 +41,8 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/3784d847-cbee-4f9c-bd94-da95fd686fd4)
 
 ## ⛏️ Hardware Schematic <a name = "hardwareschematic"></a>
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/43ab079a-dd83-45eb-8dc5-69b9612c1936)
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/10349a58-99e3-48d5-851a-6171572678cb)
+
 
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
 1. This car uses 1 SR04 for emergency braking<br/>
