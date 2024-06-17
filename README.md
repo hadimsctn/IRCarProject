@@ -39,9 +39,13 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/9db3a32d-65f0-430d-85e0-ce5b7c193c05)
 7. 1x Buzzer https://shopee.vn/product/148048328/4974689853?gsht=sjFxkDeGHTM5gwwS
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/3784d847-cbee-4f9c-bd94-da95fd686fd4)
+8. 2x TP4056 https://nshopvn.com/product/mach-sac-pin-tp4056-co-ic-bao-ve/
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/a53ee7bc-207f-4634-a584-d1d3b909f1ff)
 
 ## ⛏️ Hardware Schematic <a name = "hardwareschematic"></a>
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/43ab079a-dd83-45eb-8dc5-69b9612c1936)
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/6532ba32-e3bb-485e-a283-ab45ab16e11a)
+
+
 
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
 1. This car uses 1 SR04 for emergency braking<br/>
