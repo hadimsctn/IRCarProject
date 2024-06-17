@@ -43,7 +43,8 @@ This project using IR Receiver to Receive Data from Remote for control the car
 ![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/a53ee7bc-207f-4634-a584-d1d3b909f1ff)
 
 ## ⛏️ Hardware Schematic <a name = "hardwareschematic"></a>
-![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/10349a58-99e3-48d5-851a-6171572678cb)
+![image](https://github.com/hadimsctn/IRCarProject/assets/103713872/6532ba32-e3bb-485e-a283-ab45ab16e11a)
+
 
 
 ## 🎉 Software Concept <a name = "softwareconcept"></a>
